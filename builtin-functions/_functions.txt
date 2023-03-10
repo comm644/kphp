@@ -1306,6 +1306,10 @@ define("CURLM_BAD_SOCKET", 5);
 define("CURLM_UNKNOWN_OPTION", 6);
 define("CURLM_ADDED_ALREADY", 7);
 
+/** LDAP, added by AV */
+define("CURLOPT_PROTOCOLS", 181);
+define("CURLPROTO_LDAP", 128);
+
 function get_reference_counter ($v) ::: int;
 function prepare_search_query ($query ::: string) ::: string;
 
