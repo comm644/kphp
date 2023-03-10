@@ -110,7 +110,7 @@ if test \"$PHP_VKEXT\" != \"no\"; then
 fi
 ")
 
-find_program(PHPIZE_EXEC phpize8.0)  # 8.0 seems to be enough for generating arginfo from stubs
+find_program(PHPIZE_EXEC phpize7.4)  # 8.0 seems to be enough for generating arginfo from stubs
 if(PHPIZE_EXEC)
     message(STATUS "${PHPIZE_EXEC} found")
     # This command is considered to run manually to generate *_arginfo.h files.
