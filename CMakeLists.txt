@@ -30,6 +30,12 @@ include(cmake/external-libraries.cmake)
 # TODO: use FetchContent_Declare instead of include_directories
 include_directories(.)
 
+
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -include ${BASE_DIR}/../glibc_version_header/version_headers/x64/force_link_glibc_2.25.h")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -include ${BASE_DIR}/../glibc_version_header/version_headers/x64/force_link_glibc_2.25.h")
+
+link_directories(${CMAKE_SOURCE_DIR}/../kphp-deps)
+
 # Custom modules
 include(${BASE_DIR}/flex/flex.cmake)
 include(${BASE_DIR}/net/net.cmake)
