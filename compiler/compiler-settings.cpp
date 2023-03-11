@@ -289,7 +289,7 @@ void CompilerSettings::init() {
   ss << " -Wall -fwrapv -Wno-parentheses -Wno-trigraphs";
   ss << " -fno-strict-aliasing -fno-omit-frame-pointer";
 #ifdef __x86_64__
-  ss << " -march=sandybridge";
+  //ss << " -march=sandybridge";  //compile target with user-defined architecture
 #elif __aarch64__
   ss << " -march=armv8.2-a+crypto";
 #endif

@@ -132,7 +132,7 @@ set(KPHP_RUNTIME_ALL_SOURCES
     ${KPHP_RUNTIME_SOURCES}
     ${KPHP_SERVER_SOURCES})
 
-allow_deprecated_declarations(${BASE_DIR}/runtime/allocator.cpp ${BASE_DIR}/runtime/openssl.cpp)
+allow_deprecated_declarations(${BASE_DIR}/runtime/allocator.cpp ${BASE_DIR}/runtime/openssl.cpp  ${BASE_DIR}/common/crypto/aes256-generic.cpp )
 allow_deprecated_declarations_for_apple(${BASE_DIR}/runtime/inter-process-mutex.cpp)
 
 vk_add_library(kphp_runtime OBJECT ${KPHP_RUNTIME_ALL_SOURCES})
