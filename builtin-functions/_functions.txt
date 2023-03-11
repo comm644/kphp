@@ -1620,3 +1620,11 @@ class DateTimeImmutable implements DateTimeInterface {
 }
 
 function getenv(string $varname = '', bool $local_only = false): mixed;
+
+//codes for pathinfo() https://www.php.net/manual/en/function.pathinfo.php
+define('PATHINFO_DIRNAME', 1);
+define('PATHINFO_BASENAME', 2);
+define('PATHINFO_EXTENSION', 4);
+define('PATHINFO_FILENAME', 8);
+//TODO: implement pathinfo in runtime or polifills.
+
