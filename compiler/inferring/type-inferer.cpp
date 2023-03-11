@@ -42,7 +42,7 @@ void TypeInferer::add_restriction(RestrictionBase *restriction) {
 }
 
 void TypeInferer::check_restrictions() {
-  int limit = G->settings().show_all_type_errors.get() ? 200 : 1;
+  int limit = G->settings().show_all_type_errors.get() ? 200000 : 1;
   int shown = 0;
 
   for (int i = 0; i < restrictions.size(); i++) {
